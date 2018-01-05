@@ -8,10 +8,10 @@
         <property name="configOverrideMap">
             <map>
                 <entry key="process.operation" value="extract"/>
-                <entry key="process.mappingFile" value="conf/accountExtractMap.sdl"/>
+                <!--entry key="process.mappingFile" value="conf/accountExtractMap.sdl"/>-->
                 <entry key="sfdc.entity" value="Account"/>
                 <entry key="sfdc.extractionRequestSize" value="500"/>
-                <entry key="sfdc.extractionSOQL" value="Select Id, Name, Type, RecordTypeId, ParentId FROM Account"/>
+                <entry key="sfdc.extractionSOQL" value="Select Id from Account"/>
                 <entry key="dataAccess.type" value="csvWrite"/>
                 <entry key="dataAccess.name" value="data/accountExtract.csv"/>
             </map>
