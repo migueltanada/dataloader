@@ -1,0 +1,1 @@
+curl -v https://${env_url}/services/oauth2/token -d "grant_type=password" -d "client_id=${SRC_API_ID}" -d "client_secret=${SRC_API_SECRET}" -d "username=${SRC_API_USER}" -d "password=${SRC_API_PASSWORD}" | jq .access_token | sed s/\"//g
